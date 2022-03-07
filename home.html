@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>Mi sitio web</title>
+        <script type="application/javascript">
+            var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
+            var collapseList = collapseElementList.map(function (collapseEl) {
+            return new bootstrap.Collapse(collapseEl)
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Mi sitio web <span class="badge bg-secondary">Nuevo</span></h1>
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="voltec.html">Voltec</a>
+            </li>
+        </ul>
+        <div class="alert alert-warning" role="alert">
+            Las funcionalidades de algunos botones todavía no estan activados
+        </div>
+        <div class="alert alert-primary" role="alert">
+            ¡Bienvenido!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="card" id="introduction" style="width: 18rem;">
+            <img src="T1_Foto1.jfif" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Eduardo Pineda</h5>
+              <p class="card-text">¡Hola! Soy estudiante de octavo semestre de carrera. Estoy
+                  estudiando Ingeniería en Tecnologías Computacionales.
+              </p>
+            </div>
+        </div>
+        <div class="accordion" id="hobbies">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Cuáles son mis pasatiempos?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Me gustan la lectura y los videojuegos
+                </div>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>
